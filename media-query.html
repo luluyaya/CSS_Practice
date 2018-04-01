@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .row:after {
+        content: "";
+        display: block;
+        visibility: hidden;
+        clear: both;
+        height: 0 px;
+    }
+
+    .col {
+        box-sizing: border-box;
+        float: left;
+        width: 33.33%;
+        height: 300px;
+        background-color: #66a0ff;
+        border: 1px solid;
+
+    }
+
+
+
+
+    @media screen and ( max-width: 1024px) {
+        .col {
+            width: 50%;
+        }
+    }
+    
+        @media screen and (max-width: 768px) {
+        .col {
+            width: 100%;
+        }
+    }
+</style>
+
+<body>
+    <div class="row">
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+    </div>
+
+</body>
+
+</html>
