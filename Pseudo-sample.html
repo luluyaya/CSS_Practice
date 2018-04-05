@@ -1,0 +1,64 @@
+b<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+<style>
+    .btn {
+        color: #666;
+        text-decoration: none;
+        font-size: 20px;
+        font-family: arial;
+        position: relative;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        display: inline-block;
+    }
+
+    .btn:hover {
+        color: #ff9b19;
+    }
+
+    .btn:active {
+        color: red;
+    }
+
+    .btn:before {
+        content: "";
+        width: 0%;
+        height: 3px;
+        background-color: #ff9b19;
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        transition: width 0.3s;
+    }
+
+    .btn:after {
+        content: "";
+        width: 0%;
+        height: 3px;
+        background-color: #ff9b19;
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        transition: width 0.3s;
+    }
+
+    .btn:hover:before {
+        width: 100%;
+    }
+
+    .btn:hover:after {
+        width: 100%;
+    }
+</style>
+
+<body>
+    <a href="#" class="btn">this is a link</a>
+</body>
+</html>
